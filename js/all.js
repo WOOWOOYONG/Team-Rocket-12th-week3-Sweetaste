@@ -6,20 +6,6 @@ $(document).ready(function () {
   $(".footerpage").load("footer.html");
 });
 
-const heart = document.querySelectorAll(".heart");
-const heartSolid = document.querySelectorAll(".fa-heart");
-console.log(heart);
-heart.forEach((item) => {
-  item.addEventListener("click", () => {
-    item.classList.toggle("fa-regular");
-    item.classList.toggle("fa-solid");
-  });
-});
-
-heartSolid.addEventListener("click", () => {
-  heartSolid.classList.remove("add-to-favorite");
-});
-
 //receipt page
 //發票方式切換
 const eInvoiceBtn = document.querySelector(".e-invoice");
