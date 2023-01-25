@@ -1,0 +1,166 @@
+.cart-container {
+  max-width: 1024px;
+  margin: 0 auto;
+  header {
+    @include navbar;
+  }
+  main {
+    .cart-page {
+      max-width: 940px;
+      margin: 0 auto;
+      justify-content: space-between;
+
+      .cart-info {
+        width: 65%;
+        @include Pad {
+          width: 100%;
+        }
+        h2 {
+          text-align: center;
+          color: $sweet-green-dark;
+          background-color: $sweet-green-light;
+          font-size: $font-l;
+          padding: 16px 0;
+        }
+        ul {
+          color: $sweet-green-dark;
+          li {
+            margin-left: -32px;
+            margin-top: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid $sweet-green-light;
+            @include Pad {
+              border-bottom: none;
+            }
+            img {
+              width: 110px;
+              height: 110px;
+              object-fit: cover;
+              @include Pad {
+                width: 157px;
+                margin-top: 28px;
+              }
+            }
+            .item {
+              .item-info {
+                display: flex;
+                margin-left: 39px;
+                @include Pad {
+                  display: block;
+                  margin-left: 16px;
+                }
+                .item-txt {
+                  padding-top: 24px;
+                  margin-right: 39px;
+                  h3 {
+                    font-size: 20px;
+                    font-weight: 300;
+                  }
+                }
+                .items-qty {
+                  input {
+                    width: 48px;
+                    height: 48px;
+                    border: 1px solid $sweet-green-light;
+                    text-align: center;
+                    font-weight: 300;
+                  }
+                  button {
+                    color: $sweet-green-dark;
+                    background-color: #fff;
+                    width: 48px;
+                    height: 48px;
+                    border: 1px solid $sweet-green-light;
+                    span {
+                      text-align: center;
+                    }
+                  }
+                }
+              }
+            }
+
+            h4 {
+              font-size: 20px;
+              margin: 0;
+              @include Pad {
+                text-align: end;
+                width: 100%;
+                border-top: 1px solid $sweet-green-light;
+                border-bottom: 1px solid $sweet-green-light;
+                margin-top: 8.5px;
+                padding: 8.5px 0;
+                margin-bottom: 31.5px;
+              }
+            }
+            a {
+              img {
+                width: 18px;
+                height: 18px;
+              }
+              @include Pad {
+                display: none;
+              }
+            }
+            @include Pad {
+              padding: 0 30px;
+            }
+          }
+          li:last-child {
+            border-bottom: none;
+          }
+        }
+      }
+      .order-info {
+        width: 33%;
+        height: 258px;
+        background-color: $sweet-green-dark;
+        color: $sweet-green-light;
+        @include Pad {
+          width: 100%;
+          background-color: #fff;
+          color: $sweet-green-dark;
+        }
+        .order-txt {
+          padding: 0 16px;
+          h2 {
+            text-align: center;
+            font-size: $font-l;
+            padding: 16px 0;
+            border-bottom: 1px solid $sweet-green-light;
+            @include Pad {
+              background-color: $sweet-green-light;
+            }
+          }
+          div {
+            font-weight: 300;
+          }
+          div:last-child {
+            font-size: 20px;
+            font-weight: 500;
+          }
+        }
+        button {
+          background-color: $button-yellow;
+          color: $sweet-green-dark;
+          font-weight: 500;
+          width: 100%;
+          font-size: $font-l;
+          padding: 16px 0;
+          border: none;
+          transition: all 0.3s ease;
+          &:hover {
+            background-color: $button-yellow-hover;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    @include footer;
+    margin-top: 39px;
+    @include Pad {
+      margin-top: 0;
+    }
+  }
+}

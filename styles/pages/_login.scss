@@ -1,0 +1,186 @@
+.login-container {
+  position: relative;
+  max-width: 1024px;
+  margin: 0 auto;
+  header {
+    @include navbar;
+  }
+  main {
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      @include Pad {
+        max-width: 100%;
+      }
+      .row {
+        @include Pad {
+          flex-direction: column;
+        }
+        .user-login {
+          background-color: $sweet-green-dark;
+          width: 50%;
+          position: relative;
+          @include Pad {
+            width: 100%;
+            height: 100%;
+          }
+          h2 {
+            color: $sweet-green-light;
+            margin: 40px 120px;
+            text-align: center;
+            font-size: 36px;
+            font-weight: 400;
+          }
+          .mobile-social-account {
+            display: none;
+            background-color: $sweet-green-light;
+            padding: 30px;
+            ul {
+              width: 100%;
+              justify-content: center;
+              padding: 0;
+              li {
+                background-color: #fff;
+                width: 105px;
+                height: 56px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                a {
+                  width: 100%;
+                  img {
+                    padding: 16px;
+                    max-width: 100%;
+                  }
+                }
+              }
+            }
+
+            @include Pad {
+              display: block;
+            }
+          }
+          .mail-input {
+            position: relative;
+            max-width: 330px;
+            margin-left: 30px;
+            margin-bottom: 16px;
+            input {
+              width: 100%;
+              height: 56px;
+              padding: 16px 0;
+              text-indent: 60px;
+              background-color: $sweet-green-light;
+              color: $sweet-green;
+              font-weight: 300;
+            }
+            img {
+              position: absolute;
+              left: 20px;
+              top: 15px;
+              width: 24px;
+              height: 24px;
+            }
+            @include Pad {
+              margin-top: 30px;
+              margin-left: auto;
+              margin-right: auto;
+            }
+          }
+          .password-input {
+            position: relative;
+            max-width: 330px;
+            margin-left: 30px;
+            input {
+              width: 100%;
+              height: 56px;
+              padding: 16px 0;
+              text-indent: 60px;
+              background-color: $sweet-green-light;
+              color: $sweet-green;
+              font-weight: 300;
+            }
+            img {
+              position: absolute;
+              left: 20px;
+              top: 15px;
+              width: 24px;
+              height: 24px;
+            }
+            @include Pad {
+              margin: 0 auto;
+            }
+          }
+          .remember-me {
+            margin-left: 30px;
+            margin-top: 13px;
+            margin-bottom: 22px;
+            @include Pad {
+              padding-left: 25%;
+            }
+            @include Mobile {
+              padding: 0;
+            }
+            input {
+              width: 16px;
+              height: 16px;
+            }
+            span {
+              color: $sweet-green-light;
+              margin-left: 8px;
+            }
+          }
+          .login-btn {
+            width: 100%;
+            text-decoration: none;
+            color: $sweet-green-dark;
+            background-color: $button-yellow;
+            height: 65px;
+            font-size: $font-l;
+            font-weight: 500;
+            text-align: center;
+            padding-top: 16px;
+          }
+        }
+        .social-account {
+          width: 50%;
+          height: 350px;
+          background-color: $sweet-green-light;
+          color: $sweet-green;
+          h2 {
+            font-size: $font-l;
+            text-align: center;
+            margin: 37px 67px;
+            font-weight: 300;
+          }
+          a {
+            max-width: 330px;
+            height: 56px;
+            background-color: #fff;
+            padding: 18px 111px;
+            margin: 0 auto 16px auto;
+          }
+          @include Pad {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  footer {
+    @include footer;
+    .footer-subscribe {
+      @include Pad {
+        margin-top: 0 !important;
+      }
+      .mail-input {
+        @include Pad {
+          margin: 0;
+        }
+        @include Mobile {
+          margin: 33px auto 0 auto;
+        }
+      }
+    }
+  }
+}

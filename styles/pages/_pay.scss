@@ -1,0 +1,126 @@
+.pay-container {
+  max-width: 1024px;
+  margin: 0 auto;
+  header {
+    @include navbar;
+  }
+  main {
+    .payment-wrapper {
+      max-width: 780px;
+      margin: 0 auto;
+      .payment-data {
+        max-width: 460px;
+        height: 100%;
+        background-color: $sweet-green-dark;
+        color: $sweet-green-light;
+        @include Pad {
+          max-width: 768px;
+          width: 100%;
+        }
+        .payment-title {
+          padding: 30px 40px 0 40px;
+          h2 {
+            font-size: $font-xl;
+          }
+          .progress {
+            background-color: $sweet-green-dark;
+            height: 20px;
+            width: 170px;
+            img {
+              width: 100%;
+            }
+          }
+        }
+        .payment-form {
+          padding: 0 40px 30px 40px;
+          label {
+            font-size: $font-m;
+          }
+          input {
+            height: 56px;
+            background-color: $sweet-green-light;
+            color: $sweet-green;
+            text-indent: 20px;
+            border: none;
+          }
+          select {
+            height: 56px;
+            background-color: $sweet-green-light;
+            color: $sweet-green;
+            text-indent: 20px;
+            border: none;
+          }
+          ::placeholder {
+            color: $sweet-green;
+          }
+          .creditcard-num {
+            margin-top: 16px;
+            img {
+              width: 20px;
+              height: 16px;
+              right: 22px;
+              top: 20px;
+            }
+          }
+          .creditcard-name {
+            div {
+              input {
+                width: 186px;
+                @include Pad {
+                  width: 50%;
+                }
+              }
+              input:first-child {
+                margin-right: 8px;
+              }
+            }
+          }
+          .creditcard-expiration {
+            select {
+              width: 186px;
+              @include Pad {
+                width: 50%;
+              }
+            }
+            select:first-child {
+              @include Pad {
+                margin-right: 8px;
+              }
+            }
+            input {
+              @include Pad {
+                width: 49%;
+              }
+            }
+          }
+        }
+        .next-step {
+          width: 100%;
+          text-align: center;
+          background-color: $button-yellow;
+          color: $sweet-green-dark;
+          padding: 19px 0 13px 0;
+          font-size: $font-l;
+          transition: all 0.3s ease;
+          &:hover {
+            background-color: $button-yellow-hover;
+            cursor: pointer;
+          }
+          a {
+            font-weight: 600;
+          }
+        }
+      }
+      .order-data {
+        @include orderData;
+      }
+    }
+  }
+  footer {
+    @include footer;
+    margin-top: 65px;
+    @include Pad {
+      margin-top: 0;
+    }
+  }
+}

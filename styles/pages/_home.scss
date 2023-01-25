@@ -1,0 +1,235 @@
+* {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.home-container {
+  position: relative;
+  max-width: 1024px;
+  margin: 0 auto;
+  header {
+    @include navbar;
+  }
+  main {
+    .banner {
+      background: url(https://bit.ly/2OhbMHr) no-repeat;
+      background-position: center;
+      background-size: cover;
+      max-width: 940px;
+      height: 496px;
+      margin: 0 auto;
+      position: relative;
+      z-index: -5;
+      @include Mobile {
+        width: 100%;
+        height: 280px;
+      }
+    }
+    .banner-container {
+      margin-top: -5%;
+      @include Mobile {
+        margin-top: 0;
+        padding: 0;
+      }
+      .banner-card {
+        width: 260px;
+        height: 257px;
+        writing-mode: vertical-lr;
+        position: relative;
+        overflow: hidden;
+        margin: 0.8px;
+        @include Mobile {
+          width: 33%;
+          height: 180px;
+        }
+        a {
+          opacity: 0.8;
+          letter-spacing: 8px;
+          background-color: $sweet-green-dark;
+          color: #fff;
+          transition: all 0.3s ease;
+          &:hover {
+            background-color: $button-yellow;
+            color: $sweet-green-dark;
+          }
+        }
+      }
+      .select {
+        background: url(https://bit.ly/2R5tqwD) no-repeat center/cover;
+        @include blurCard;
+      }
+      .recommend {
+        background: url(https://bit.ly/2Dwoxd7) no-repeat center/cover;
+        @include blurCard;
+      }
+      .newproducts {
+        background: url(https://bit.ly/2OUteif) no-repeat center/cover;
+        @include blurCard;
+      }
+    }
+    .introduction {
+      p {
+        line-height: 2.5rem;
+      }
+      margin-top: 80px;
+
+      .why-select-title-sm {
+        width: 196px;
+        display: none;
+        margin: 30px auto;
+        @include Pad {
+          display: block;
+        }
+      }
+      .why-select {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 100%;
+        background-color: $sweet-green-light;
+        height: 420px;
+        padding: 0 42px;
+        @include Pad {
+          flex-direction: column;
+          height: 40%;
+        }
+
+        .why-select-pic {
+          object-fit: cover;
+          margin: -20px 0;
+          max-width: 460px;
+          @include Pad {
+            max-width: 100%;
+            height: 250px;
+            margin: 0;
+          }
+        }
+        .why-select-content {
+          color: $sweet-green;
+          font-weight: 300;
+          padding: 50px 0;
+          margin-left: 55px;
+          writing-mode: vertical-rl;
+          width: 256px;
+          p:nth-child(2) {
+            margin-right: 60px;
+          }
+          @include Pad {
+            color: $sweet-green;
+            writing-mode: horizontal-tb;
+            width: 90%;
+            margin: 0 auto;
+          }
+        }
+        .why-select-title-lg {
+          margin: -20px 0;
+          width: 90px;
+          height: 307px;
+
+          @include Pad {
+            display: none;
+          }
+        }
+      }
+      .why-eat-title-sm {
+        display: none;
+        width: 196px;
+        margin: 30px auto;
+        @include Pad {
+          display: block;
+        }
+      }
+
+      .why-eat {
+        display: flex;
+        justify-content: space-between;
+        margin: 105px auto 0 auto;
+        max-width: 100%;
+        background-color: $sweet-green-light;
+        height: 420px;
+        padding: 0 42px;
+        @include Pad {
+          margin-top: 0;
+          flex-direction: column-reverse;
+          height: 50%;
+        }
+        .why-eat-content {
+          color: $sweet-green;
+          font-weight: 300;
+          writing-mode: vertical-rl;
+          padding: 50px 0;
+          p:nth-child(2) {
+            margin-right: 60px;
+          }
+
+          @include Pad {
+            color: $sweet-green;
+            writing-mode: horizontal-tb;
+            width: 90%;
+            margin: 0 auto;
+          }
+        }
+        .why-eat-pic {
+          margin: -20px 0;
+          max-width: 460px;
+          object-fit: cover;
+          @include Pad {
+            max-width: 100%;
+            height: 250px;
+            margin: 0;
+          }
+        }
+        .why-eat-title-lg {
+          margin: -20px 0;
+          width: 90px;
+          height: 307px;
+          @include Pad {
+            display: none;
+          }
+        }
+      }
+      .no-reason-lg {
+        display: flex;
+        justify-content: center;
+        margin-top: 90px;
+        img {
+          width: 90px;
+        }
+        @include Pad {
+          display: none;
+        }
+      }
+      .no-reason-sm {
+        display: none;
+        width: 226px;
+        margin: 0 auto;
+        margin-top: 30px;
+        @include Pad {
+          display: block;
+        }
+      }
+    }
+    .selected-products {
+      margin-top: 80px;
+      @include Pad {
+        margin-top: 30px;
+      }
+      .sweet {
+        position: relative;
+        @include sweetProductCard;
+      }
+      @include Pad {
+        div:nth-child(2),
+        div:nth-child(3) {
+          display: none;
+        }
+      }
+    }
+  }
+  footer {
+    @include footer;
+    @include Pad {
+      margin-top: 30px;
+    }
+  }
+}

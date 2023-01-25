@@ -1,0 +1,70 @@
+<!-- desktop navbar -->
+<nav class="desktop-nav">
+  <div class="logo">
+    <a href="index.html">
+      <img src="/sweetaste_img/logo-all-dark.svg" alt="logo" class="img-fluid"
+    /></a>
+  </div>
+  <ul class="d-flex align-items-center">
+    <li>
+      <a
+        href="index.html"
+        class="text-decoration-none text-sweet-green-dark fw-bold"
+        >首頁</a
+      >
+    </li>
+    <li>
+      <a
+        href="sweet.html"
+        class="text-decoration-none text-sweet-green-dark fw-bold"
+        >甜點</a
+      >
+    </li>
+    <li>
+      <a
+        href="login.html"
+        class="text-decoration-none text-sweet-green-dark fw-bold"
+        >登入</a
+      >
+    </li>
+    <li class="cart-icon">
+      <a href="cart.html"
+        ><img src="./sweetaste_img/shopping_cart.png" alt=""
+      /></a>
+    </li>
+  </ul>
+</nav>
+<!--mobile navbar-->
+<nav>
+  <div class="mobile-nav">
+    <div class="toggle-btn">
+      <img src="./sweetaste_img/dehaze-24px.png" alt="" />
+    </div>
+    <div class="mobile-nav-logo">
+      <a href="index.html">
+        <img src="./sweetaste_img/logotype-sm-dark.svg" alt=""
+      /></a>
+    </div>
+    <div class="mobile-cart-icon">
+      <a href="cart.html">
+        <img src="./sweetaste_img/shopping_cart.png" alt=""
+      /></a>
+    </div>
+  </div>
+  <div class="mobile-nav-list">
+    <ul>
+      <li><a href="index.html" class="text-decoration-none">首頁</a></li>
+      <li><a href="sweet.html" class="text-decoration-none">甜點</a></li>
+      <li><a href="login.html" class="text-decoration-none">登入</a></li>
+    </ul>
+  </div>
+</nav>
+
+<script>
+  //Mobile navbar
+  const toggleBtn = document.querySelector(".toggle-btn");
+  const mobileNavbar = document.querySelector(".mobile-nav-list");
+  toggleBtn.addEventListener("click", () => {
+    mobileNavbar.classList.toggle("mobile-nav-list-active");
+  });
+</script>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sweettaste-運送</title>
+    <link rel="stylesheet" href="./styles/all.css" />
+  </head>
+  <body>
+    <div class="delivery-container">
+      <header class="headerpage"></header>
+      <main>
+        <div class="delivery-wrapper d-flex justify-content-between">
+          <!--運送資料-->
+          <div class="delivery-data">
+            <div
+              class="delivery-title d-flex justify-content-between align-items-center"
+            >
+              <h2>運送</h2>
+              <div class="progress">
+                <img src="./sweetaste_img/bar_delivery.svg" alt="" />
+              </div>
+            </div>
+            <form class="delivery-form">
+              <div class="delivery-name d-flex justify-content-between">
+                <div>
+                  <label for="" class="d-block">姓氏</label>
+                  <input type="text" placeholder="王" />
+                </div>
+                <div>
+                  <label for="" class="d-block">名字</label>
+                  <input type="text" placeholder="小明" />
+                </div>
+              </div>
+              <div class="delivery-phone">
+                <label for="" class="d-block">電話</label>
+                <input type="number" placeholder="0912-345-678" />
+              </div>
+              <div class="delivery-address">
+                <label for="" class="d-block">地址</label>
+                <div class="d-flex justify-content-between">
+                  <select name="" id="" class="d-inline-block">
+                    <option selected>高雄市</option>
+                  </select>
+                  <select name="" id="" class="d-inline-block">
+                    <option value="" selected>新興區</option>
+                    <option value="">前鎮區</option>
+                    <option value="">三民區</option>
+                    <option value="">岡山區</option>
+                  </select>
+                </div>
+                <input
+                  type="text"
+                  placeholder="幸福路 520 號"
+                  class="d-block mt-2"
+                />
+              </div>
+            </form>
+            <a href="./pay.html" class="text-decoration-none">
+              <div class="next-step">下一步</div>
+            </a>
+          </div>
+          <!--訂單摘要-->
+          <div class="order-data">
+            <div class="order-summary">
+              <h2>訂單摘要</h2>
+              <div class="order-info">
+                <div class="order-txt d-flex justify-content-between">
+                  <p>小計</p>
+                  <p>NT$2700</p>
+                </div>
+                <div class="order-txt d-flex justify-content-between">
+                  <p>運費</p>
+                  <p>NT$300</p>
+                </div>
+                <div class="order-txt d-flex justify-content-between">
+                  <p>總計</p>
+                  <p>NT$3000</p>
+                </div>
+              </div>
+            </div>
+            <div class="order-list">
+              <h2>購物清單</h2>
+              <ul>
+                <li class="d-flex align-items-center">
+                  <img src="./sweetaste_img/p-8.jpg" alt="" />
+                  <div class="order-info">
+                    <h4>焦糖馬卡龍（2）</h4>
+                    <p>NT$ 900</p>
+                  </div>
+                </li>
+                <li class="d-flex align-items-center">
+                  <img src="./sweetaste_img/p-5.png" alt="" />
+                  <div class="order-info">
+                    <h4>焦糖馬卡龍（2）</h4>
+                    <p>NT$ 900</p>
+                  </div>
+                </li>
+                <li class="d-flex align-items-center">
+                  <img src="./sweetaste_img/p-3.png" alt="" />
+                  <div class="order-info">
+                    <h4>焦糖馬卡龍（2）</h4>
+                    <p>NT$ 900</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footerpage"></footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="all.js"></script>
+  </body>
+</html>

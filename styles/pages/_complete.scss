@@ -1,0 +1,59 @@
+.complete-container {
+  max-width: 1024px;
+  margin: 0 auto;
+  header {
+    @include navbar;
+  }
+  main {
+    .payment-success-banner {
+      background: url("../sweetaste_img/payment_success.jpg") no-repeat;
+      background-position: center;
+      background-size: cover;
+      max-width: 940px;
+      height: 460px;
+      margin: 0 auto;
+      .success-title {
+        width: 300px;
+        margin: 0 auto;
+        padding-top: 130px;
+        img:first-child {
+          width: 190px;
+          height: 24px;
+          margin: 0 auto 32px auto;
+        }
+        img:nth-child(2) {
+          width: 189px;
+          height: 45px;
+          margin: 0 auto 52px auto;
+        }
+      }
+      .continuing-shop {
+        // text-align: center;
+        display: flex;
+        justify-content: center;
+        a {
+          text-decoration: none;
+          color: $sweet-green-dark;
+          font-size: $font-l;
+          background-color: $button-yellow;
+          height: 65px;
+          padding: 17px 102px;
+          font-weight: 500;
+          transition: all 0.3s ease;
+          &:hover {
+            background-color: $button-yellow-hover;
+          }
+          @include Mobile {
+            width: 100%;
+            margin-top: 112px;
+            padding: 19px 139px 13px 139px;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    @include footer;
+  }
+}

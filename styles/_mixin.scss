@@ -1,0 +1,126 @@
+@mixin blurCard {
+  filter: blur(5px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 260px;
+  z-index: -1;
+}
+
+@mixin sweetProductCard {
+  .selected-today {
+    background-color: $sweet-green-dark;
+    color: $sweet-green-light;
+    -webkit-writing-mode: vertical-lr;
+    writing-mode: vertical-lr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 3px;
+    width: 36px;
+    height: 107px;
+    position: absolute;
+    top: 0;
+    left: 20px;
+  }
+  .heart {
+    position: absolute;
+    right: 22px;
+    top: 19px;
+    font-size: 24px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .fa-solid {
+    color: red;
+  }
+  .sweet-info {
+    border-left: 1px solid $sweet-green-light;
+    border-right: 1px solid $sweet-green-light;
+    h5 {
+      margin: 0;
+      padding: 14px 0;
+    }
+    .sweet-title {
+      border-right: 1px solid $sweet-green-light;
+      padding-right: 33px;
+      padding-left: 16px;
+    }
+  }
+  button {
+    font-size: 24px;
+    padding: 16px 90px;
+    color: $sweet-green-dark;
+    background-color: $sweet-green-light;
+    transition: 0.3s all ease;
+    &:hover {
+      color: $sweet-green-light;
+      background-color: $sweet-green-dark;
+    }
+  }
+}
+
+@mixin orderData {
+  width: 300px;
+  color: $sweet-green;
+  @include Pad {
+    display: none;
+  }
+  .order-summary {
+    border: 1px solid $sweet-green-light;
+    h2 {
+      background-color: $sweet-green-light;
+      font-size: $font-l;
+      text-align: center;
+      padding: 16px 0;
+      margin: 0;
+    }
+    .order-info {
+      padding: 16px 20px;
+      .order-txt:last-child {
+        font-size: $font-m;
+        font-weight: 500;
+        height: 28px;
+      }
+    }
+  }
+  .order-list {
+    margin-top: 20px;
+    border: 1px solid $sweet-green-light;
+    h2 {
+      font-size: $font-l;
+      background-color: $sweet-green-light;
+      text-align: center;
+      padding: 16px 0;
+    }
+    ul {
+      padding: 0;
+      margin-left: 20px;
+      li {
+        height: 80px;
+        img {
+          width: 120px;
+          height: 80px;
+          object-fit: cover;
+          margin-right: 20px;
+        }
+        h4 {
+          font-size: $font-s;
+          font-weight: 300;
+          margin: 0 0 2px 0;
+        }
+        p {
+          font-weight: 500;
+          font-size: $font-m;
+          margin: 0;
+        }
+      }
+      li:first-child,
+      li:nth-child(2) {
+        margin-bottom: 16px;
+      }
+    }
+  }
+}

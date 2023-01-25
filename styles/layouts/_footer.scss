@@ -1,0 +1,98 @@
+@mixin footer {
+  .footer-subscribe {
+    padding: 30px 122px;
+    margin-top: 60px;
+    @include Pad {
+      padding: 30px;
+      margin-top: 0;
+    }
+    .footer-top-txt {
+      img {
+        width: 40px;
+        height: 40px;
+      }
+      h2 {
+        font-size: $font-l;
+      }
+      @include Pad {
+        margin: 0 auto;
+      }
+    }
+    .mail-input {
+      .mail-icon {
+        left: 20px;
+        top: 16px;
+        width: 24px;
+      }
+      input {
+        width: 380px;
+        height: 56px;
+        outline: none;
+        text-indent: 60px;
+        @include Pad {
+          width: 315px;
+        }
+      }
+      button {
+        right: 0;
+        width: 64px;
+        height: 56px;
+      }
+      @include Pad {
+        margin: 8px auto 0 auto;
+      }
+    }
+  }
+  .footer-info {
+    padding: 0 121px 20px 121px;
+    @include Mobile {
+      flex-direction: column;
+      padding: 38px 0 30px 30px;
+    }
+    .contact-info {
+      margin-top: 39px;
+      @include Mobile {
+        margin-top: 0;
+      }
+      img {
+        width: 171px;
+        height: 27px;
+      }
+      .contact-txt {
+        color: $sweet-green-dark;
+        margin-top: 116px;
+        @include Mobile {
+          margin-top: 40px;
+        }
+      }
+      .contact-icon {
+        gap: 5px;
+        padding-top: 10px;
+        img {
+          width: 32px;
+        }
+      }
+    }
+    .footer-title {
+      margin-top: 30px;
+      @include Mobile {
+        margin-top: 0;
+      }
+      .footer-pic {
+        width: 60px;
+        height: 218px;
+        @include Mobile {
+          display: none;
+        }
+      }
+      h6 {
+        margin-top: 46px;
+        color: $sweet-green-dark;
+        @include Mobile {
+          margin-top: 23px;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
