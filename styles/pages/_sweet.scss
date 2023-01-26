@@ -41,6 +41,11 @@
             text-align: center;
             padding: 16px 30px;
             border: 1px solid $sweet-green-light;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            &:hover {
+              background-color: $sweet-green-light;
+            }
           }
           li:first-child {
             background-color: $sweet-green-dark;

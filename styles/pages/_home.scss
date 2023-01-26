@@ -70,6 +70,9 @@
     .introduction {
       p {
         line-height: 2.5rem;
+        @include Pad {
+          line-height: 2rem;
+        }
       }
       margin-top: 80px;
 
@@ -92,6 +95,7 @@
         @include Pad {
           flex-direction: column;
           height: 40%;
+          padding: 0;
         }
 
         .why-select-pic {
@@ -113,12 +117,16 @@
           width: 256px;
           p:nth-child(2) {
             margin-right: 60px;
+            @include Pad {
+              margin-right: 0;
+            }
           }
           @include Pad {
             color: $sweet-green;
             writing-mode: horizontal-tb;
             width: 90%;
             margin: 0 auto;
+            padding: 30px;
           }
         }
         .why-select-title-lg {
@@ -149,17 +157,24 @@
         height: 420px;
         padding: 0 42px;
         @include Pad {
-          margin-top: 0;
           flex-direction: column-reverse;
           height: 50%;
+          padding: 0;
+          margin: 0;
         }
         .why-eat-content {
           color: $sweet-green;
           font-weight: 300;
           writing-mode: vertical-rl;
           padding: 50px 0;
+          @include Pad {
+            padding: 30px;
+          }
           p:nth-child(2) {
             margin-right: 60px;
+            @include Pad {
+              margin-right: 0;
+            }
           }
 
           @include Pad {

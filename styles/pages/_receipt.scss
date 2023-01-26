@@ -33,6 +33,9 @@
         }
         .receipt-content {
           padding: 30px 40px;
+          @include Mobile {
+            padding: 30px;
+          }
           h3 {
             font-size: $font-m;
             font-weight: 400;

@@ -53,6 +53,10 @@
         margin-bottom: 5px;
         a {
           color: $sweet-green-dark;
+          &:hover {
+            color: rgba(200, 57, 46, 0.921);
+            border-bottom: 1px solid rgba(200, 57, 46, 0.921);
+          }
         }
       }
     }

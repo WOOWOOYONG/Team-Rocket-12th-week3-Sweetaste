@@ -5,6 +5,11 @@
     @include navbar;
   }
   main {
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
     .cart-page {
       max-width: 940px;
       margin: 0 auto;

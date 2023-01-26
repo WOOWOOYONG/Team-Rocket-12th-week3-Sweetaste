@@ -72,6 +72,7 @@
                 width: 100%;
               }
               input {
+                width: 100%;
                 @include Pad {
                   width: 90%;
                 }
@@ -94,6 +95,8 @@
           .delivery-phone {
             margin-top: 16px;
             input {
+              appearance: none;
+              -webkit-appearance: none;
               width: 100%;
               @include Pad {
                 width: 95%;
@@ -106,7 +109,13 @@
           .delivery-address {
             margin-top: 16px;
             select {
+              appearance: none;
+              -webkit-appearance: none;
               width: 186px;
+              background-image: url("/sweetaste_img/sort-solid.svg");
+              background-repeat: no-repeat;
+              background-size: 16px 16px;
+              background-position: right 20px top 20px, 0 0;
               @include Pad {
                 width: 45%;
               }
