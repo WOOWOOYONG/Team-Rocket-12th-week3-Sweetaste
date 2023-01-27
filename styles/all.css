@@ -10989,12 +10989,6 @@ textarea.form-control-lg {
   top: 0;
   left: 20px;
 }
-@media (max-width: 390px) {
-  .home-container main .selected-products .sweet .selected-today {
-    top: 20px;
-    left: 31px;
-  }
-}
 .home-container main .selected-products .sweet .heart {
   position: absolute;
   right: 22px;
@@ -11004,12 +10998,6 @@ textarea.form-control-lg {
 .home-container main .selected-products .sweet .heart:hover {
   cursor: pointer;
   transform: scale(1.1);
-}
-@media (max-width: 390px) {
-  .home-container main .selected-products .sweet .heart {
-    top: 38px;
-    right: 30px;
-  }
 }
 .home-container main .selected-products .sweet .fa-solid {
   color: red;
@@ -11037,6 +11025,12 @@ textarea.form-control-lg {
 .home-container main .selected-products .sweet button:hover {
   color: #eaf0ed;
   background-color: #3f5d45;
+}
+.home-container main .selected-products .sweet .selected-today {
+  top: 0;
+}
+.home-container main .selected-products .sweet .heart {
+  top: 19px;
 }
 @media (max-width: 768px) {
   .home-container main .selected-products div:nth-child(2),
@@ -11326,12 +11320,6 @@ textarea.form-control-lg {
   top: 0;
   left: 20px;
 }
-@media (max-width: 390px) {
-  .sweet-container main .product-content .products .sweet .selected-today {
-    top: 20px;
-    left: 31px;
-  }
-}
 .sweet-container main .product-content .products .sweet .heart {
   position: absolute;
   right: 22px;
@@ -11341,12 +11329,6 @@ textarea.form-control-lg {
 .sweet-container main .product-content .products .sweet .heart:hover {
   cursor: pointer;
   transform: scale(1.1);
-}
-@media (max-width: 390px) {
-  .sweet-container main .product-content .products .sweet .heart {
-    top: 38px;
-    right: 30px;
-  }
 }
 .sweet-container main .product-content .products .sweet .fa-solid {
   color: red;
@@ -11378,12 +11360,16 @@ textarea.form-control-lg {
 @media (max-width: 768px) {
   .sweet-container main .product-content .products .sweet {
     width: 50%;
-    padding: 20px 10px;
   }
 }
 @media (max-width: 390px) {
   .sweet-container main .product-content .products .sweet {
     width: 85%;
+  }
+}
+@media (max-width: 768px) {
+  .sweet-container main .product-content .products .sweet img {
+    height: 315px;
   }
 }
 @media (max-width: 768px) {
@@ -11399,13 +11385,21 @@ textarea.form-control-lg {
 }
 @media (max-width: 768px) {
   .sweet-container main .product-content .pagination {
-    margin-left: 0;
-    margin-top: 20px;
+    padding: 0 64px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 768px) {
+  .sweet-container main .product-content .pagination {
+    padding: 0;
   }
 }
 .sweet-container main .product-content .pagination ul {
   display: flex;
   align-items: center;
+  justify-content: center;
+  padding: 0;
 }
 .sweet-container main .product-content .pagination ul li {
   padding: 18px 26px;

@@ -23,10 +23,6 @@
     position: absolute;
     top: 0;
     left: 20px;
-    @include Mobile {
-      top: 20px;
-      left: 31px;
-    }
   }
   .heart {
     position: absolute;
@@ -36,10 +32,6 @@
     &:hover {
       cursor: pointer;
       transform: scale(1.1);
-    }
-    @include Mobile {
-      top: 38px;
-      right: 30px;
     }
   }
   .fa-solid {

@@ -72,10 +72,14 @@
           @include sweetProductCard;
           @include Pad {
             width: 50%;
-            padding: 20px 10px;
           }
           @include Mobile {
             width: 85%;
+          }
+          img {
+            @include Pad {
+              height: 315px;
+            }
           }
         }
         .sweet:nth-child(4),
@@ -90,12 +94,18 @@
         margin-left: auto;
         margin-top: 30px;
         @include Pad {
-          margin-left: 0;
-          margin-top: 20px;
+          padding: 0 64px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        @include Pad {
+          padding: 0;
         }
         ul {
           display: flex;
           align-items: center;
+          justify-content: center;
+          padding: 0;
           li {
             padding: 18px 26px;
             font-size: 20px;

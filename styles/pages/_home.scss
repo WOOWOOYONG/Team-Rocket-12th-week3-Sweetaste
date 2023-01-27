@@ -232,6 +232,12 @@
       .sweet {
         position: relative;
         @include sweetProductCard;
+        .selected-today {
+          top: 0;
+        }
+        .heart {
+          top: 19px;
+        }
       }
       @include Pad {
         div:nth-child(2),
