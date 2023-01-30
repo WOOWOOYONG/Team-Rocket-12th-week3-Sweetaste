@@ -13,6 +13,9 @@
       max-width: 940px;
       height: 496px;
       margin: 0 auto;
+      @include Pad {
+        background-position: 100%;
+      }
       @include Mobile {
         width: 100%;
         height: 277px;
@@ -127,7 +130,7 @@
       }
     }
   }
-  footer {
-    @include footer;
-  }
+}
+footer {
+  @include footer;
 }

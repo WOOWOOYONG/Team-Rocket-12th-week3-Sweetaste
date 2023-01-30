@@ -54,6 +54,11 @@
             text-indent: 20px;
             border: none;
           }
+          input::-webkit-outer-spin-button,
+          input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+          }
           select {
             height: 56px;
             background-color: $sweet-green-light;
@@ -170,11 +175,11 @@
       }
     }
   }
-  footer {
-    @include footer;
-    margin-top: 65px;
-    @include Pad {
-      margin-top: 0;
-    }
+}
+footer {
+  @include footer;
+  margin-top: 65px;
+  @include Pad {
+    margin-top: 0;
   }
 }

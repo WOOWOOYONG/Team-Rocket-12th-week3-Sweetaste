@@ -176,19 +176,19 @@
       }
     }
   }
-  footer {
-    @include footer;
-    .footer-subscribe {
+}
+footer {
+  @include footer;
+  .footer-subscribe {
+    @include Pad {
+      margin-top: 0 !important;
+    }
+    .mail-input {
       @include Pad {
-        margin-top: 0 !important;
+        margin: 0;
       }
-      .mail-input {
-        @include Pad {
-          margin: 0;
-        }
-        @include Mobile {
-          margin: 33px auto 0 auto;
-        }
+      @include Mobile {
+        margin: 33px auto 0 auto;
       }
     }
   }

@@ -80,6 +80,11 @@
             ::placeholder {
               color: $sweet-green;
             }
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+              -webkit-appearance: none;
+              margin: 0;
+            }
             .receipt-address {
               display: none;
               input[type="checkbox"] {
@@ -95,6 +100,12 @@
                   color: $sweet-green-dark;
                   text-indent: 20px;
                   font-weight: 300;
+                  appearance: none;
+                  -webkit-appearance: none;
+                  background-image: url("../sweetaste_img/sort-solid.svg");
+                  background-repeat: no-repeat;
+                  background-size: 16px 16px;
+                  background-position: right 20px top 20px, 0 0;
                   @include Pad {
                     width: 100%;
                   }
@@ -142,11 +153,11 @@
       }
     }
   }
-  footer {
-    @include footer;
-    margin-top: 65px;
-    @include Pad {
-      margin-top: 0;
-    }
+}
+footer {
+  @include footer;
+  margin-top: 65px;
+  @include Pad {
+    margin-top: 0;
   }
 }

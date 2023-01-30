@@ -247,10 +247,10 @@
       }
     }
   }
-  footer {
-    @include footer;
-    @include Pad {
-      margin-top: 30px;
-    }
+}
+footer {
+  @include footer;
+  @include Pad {
+    margin-top: 30px;
   }
 }

@@ -53,8 +53,7 @@
       }
     }
   }
-
-  footer {
-    @include footer;
-  }
+}
+footer {
+  @include footer;
 }

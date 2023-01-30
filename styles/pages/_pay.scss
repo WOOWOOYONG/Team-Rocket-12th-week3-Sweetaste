@@ -43,6 +43,11 @@
             text-indent: 20px;
             border: none;
           }
+          input::-webkit-outer-spin-button,
+          input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+          }
           select {
             appearance: none;
             -webkit-appearance: none;
@@ -122,11 +127,11 @@
       }
     }
   }
-  footer {
-    @include footer;
-    margin-top: 65px;
-    @include Pad {
-      margin-top: 0;
-    }
+}
+footer {
+  @include footer;
+  margin-top: 65px;
+  @include Pad {
+    margin-top: 0;
   }
 }
