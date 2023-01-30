@@ -3,5 +3,3 @@
 ## Demo
 
 [GitHub Pages](https://woowooyong.github.io/Team-Rocket-12th-week3-Sweetaste/)
-
-## 遇到的問題紀錄
