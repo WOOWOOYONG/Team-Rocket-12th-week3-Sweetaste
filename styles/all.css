@@ -10651,7 +10651,7 @@ textarea.form-control-lg {
   text-decoration: none;
 }
 .home-container header .desktop-nav ul li:hover {
-  text-decoration: underline;
+  border-bottom: 2px solid #3f5d45;
 }
 .home-container header .desktop-nav ul .cart-icon {
   margin-left: 19px;
@@ -11186,7 +11186,7 @@ footer .footer-info .footer-title h6, footer .footer-info .footer-title .h6 {
   text-decoration: none;
 }
 .sweet-container header .desktop-nav ul li:hover {
-  text-decoration: underline;
+  border-bottom: 2px solid #3f5d45;
 }
 .sweet-container header .desktop-nav ul .cart-icon {
   margin-left: 19px;
@@ -11563,7 +11563,7 @@ footer .footer-info .footer-title h6, footer .footer-info .footer-title .h6 {
   text-decoration: none;
 }
 .login-container header .desktop-nav ul li:hover {
-  text-decoration: underline;
+  border-bottom: 2px solid #3f5d45;
 }
 .login-container header .desktop-nav ul .cart-icon {
   margin-left: 19px;
@@ -11946,7 +11946,7 @@ footer .footer-info .footer-title h6, footer .footer-info .footer-title .h6 {
   text-decoration: none;
 }
 .cart-container header .desktop-nav ul li:hover {
-  text-decoration: underline;
+  border-bottom: 2px solid #3f5d45;
 }
 .cart-container header .desktop-nav ul .cart-icon {
   margin-left: 19px;
@@ -12305,7 +12305,7 @@ footer .footer-info .footer-title h6, footer .footer-info .footer-title .h6 {
   text-decoration: none;
 }
 .delivery-container header .desktop-nav ul li:hover {
-  text-decoration: underline;
+  border-bottom: 2px solid #3f5d45;
 }
 .delivery-container header .desktop-nav ul .cart-icon {
   margin-left: 19px;
@@ -12766,7 +12766,7 @@ footer .footer-info .footer-title h6, footer .footer-info .footer-title .h6 {
   text-decoration: none;
 }
 .pay-container header .desktop-nav ul li:hover {
-  text-decoration: underline;
+  border-bottom: 2px solid #3f5d45;
 }
 .pay-container header .desktop-nav ul .cart-icon {
   margin-left: 19px;
@@ -13151,7 +13151,7 @@ footer .footer-info .footer-title h6, footer .footer-info .footer-title .h6 {
   text-decoration: none;
 }
 .receipt-container header .desktop-nav ul li:hover {
-  text-decoration: underline;
+  border-bottom: 2px solid #3f5d45;
 }
 .receipt-container header .desktop-nav ul .cart-icon {
   margin-left: 19px;
@@ -13565,7 +13565,7 @@ footer .footer-info .footer-title h6, footer .footer-info .footer-title .h6 {
   text-decoration: none;
 }
 .complete-container header .desktop-nav ul li:hover {
-  text-decoration: underline;
+  border-bottom: 2px solid #3f5d45;
 }
 .complete-container header .desktop-nav ul .cart-icon {
   margin-left: 19px;

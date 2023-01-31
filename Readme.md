@@ -3,3 +3,8 @@
 ## Demo
 
 [GitHub Pages](https://woowooyong.github.io/Team-Rocket-12th-week3-Sweetaste/)
+
+## 本次練習
+
+1. 用 jQuery 重複插入 header & footer
+2. bootstrap 格線系統 & 客製化
