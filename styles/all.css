@@ -10632,7 +10632,8 @@ textarea.form-control-lg {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  margin: 30px 0;
+  max-width: 940px;
+  margin: 30px auto;
 }
 @media (max-width: 768px) {
   .home-container header .desktop-nav {
@@ -10640,14 +10641,13 @@ textarea.form-control-lg {
   }
 }
 .home-container header .desktop-nav .logo {
-  margin-left: 30px;
   width: 220px;
 }
 .home-container header .desktop-nav ul {
   margin: 0;
+  gap: 60px;
 }
 .home-container header .desktop-nav ul li {
-  margin-right: 60px;
   text-decoration: none;
 }
 .home-container header .desktop-nav ul li:hover {
@@ -10655,7 +10655,6 @@ textarea.form-control-lg {
 }
 .home-container header .desktop-nav ul .cart-icon {
   margin-left: 19px;
-  margin-right: 34px;
 }
 .home-container header .mobile-nav {
   display: none;
@@ -11168,7 +11167,8 @@ footer .footer-info .footer-title h6, footer .footer-info .footer-title .h6 {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  margin: 30px 0;
+  max-width: 940px;
+  margin: 30px auto;
 }
 @media (max-width: 768px) {
   .sweet-container header .desktop-nav {
@@ -11176,14 +11176,13 @@ footer .footer-info .footer-title h6, footer .footer-info .footer-title .h6 {
   }
 }
 .sweet-container header .desktop-nav .logo {
-  margin-left: 30px;
   width: 220px;
 }
 .sweet-container header .desktop-nav ul {
   margin: 0;
+  gap: 60px;
 }
 .sweet-container header .desktop-nav ul li {
-  margin-right: 60px;
   text-decoration: none;
 }
 .sweet-container header .desktop-nav ul li:hover {
@@ -11191,7 +11190,6 @@ footer .footer-info .footer-title h6, footer .footer-info .footer-title .h6 {
 }
 .sweet-container header .desktop-nav ul .cart-icon {
   margin-left: 19px;
-  margin-right: 34px;
 }
 .sweet-container header .mobile-nav {
   display: none;
@@ -11403,18 +11401,14 @@ footer .footer-info .footer-title h6, footer .footer-info .footer-title .h6 {
     padding: 0;
   }
 }
-.sweet-container main .product-content .pagination ul {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-}
 .sweet-container main .product-content .pagination ul li {
-  padding: 18px 26px;
+  padding: 18px;
+  text-align: center;
   font-size: 20px;
   border: 1px solid #eaf0ed;
   cursor: pointer;
   font-weight: 300;
+  width: 60px;
 }
 .sweet-container main .product-content .pagination ul li:first-child {
   padding: 18px;
@@ -11424,7 +11418,7 @@ footer .footer-info .footer-title h6, footer .footer-info .footer-title .h6 {
   background-color: #3f5d45;
 }
 .sweet-container main .product-content .pagination ul li:last-child {
-  padding: 17px;
+  padding: 18px;
 }
 
 footer .footer-subscribe {
@@ -11550,7 +11544,8 @@ footer .footer-info .footer-title h6, footer .footer-info .footer-title .h6 {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  margin: 30px 0;
+  max-width: 940px;
+  margin: 30px auto;
 }
 @media (max-width: 768px) {
   .login-container header .desktop-nav {
@@ -11558,14 +11553,13 @@ footer .footer-info .footer-title h6, footer .footer-info .footer-title .h6 {
   }
 }
 .login-container header .desktop-nav .logo {
-  margin-left: 30px;
   width: 220px;
 }
 .login-container header .desktop-nav ul {
   margin: 0;
+  gap: 60px;
 }
 .login-container header .desktop-nav ul li {
-  margin-right: 60px;
   text-decoration: none;
 }
 .login-container header .desktop-nav ul li:hover {
@@ -11573,7 +11567,6 @@ footer .footer-info .footer-title h6, footer .footer-info .footer-title .h6 {
 }
 .login-container header .desktop-nav ul .cart-icon {
   margin-left: 19px;
-  margin-right: 34px;
 }
 .login-container header .mobile-nav {
   display: none;
@@ -11650,6 +11643,7 @@ footer .footer-info .footer-title h6, footer .footer-info .footer-title .h6 {
   text-align: center;
   font-size: 36px;
   font-weight: 400;
+  margin: 0;
 }
 @media (max-width: 768px) {
   .login-container main .container .row .user-login h2, .login-container main .container .row .user-login .h2 {
@@ -11661,18 +11655,10 @@ footer .footer-info .footer-title h6, footer .footer-info .footer-title .h6 {
   background-color: #eaf0ed;
   padding: 30px;
 }
-.login-container main .container .row .user-login .mobile-social-account ul {
-  width: 100%;
-  justify-content: center;
-  padding: 0;
-}
 .login-container main .container .row .user-login .mobile-social-account ul li {
   background-color: #fff;
   width: 105px;
   height: 56px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .login-container main .container .row .user-login .mobile-social-account ul li a {
   width: 100%;
@@ -11941,7 +11927,8 @@ footer .footer-info .footer-title h6, footer .footer-info .footer-title .h6 {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  margin: 30px 0;
+  max-width: 940px;
+  margin: 30px auto;
 }
 @media (max-width: 768px) {
   .cart-container header .desktop-nav {
@@ -11949,14 +11936,13 @@ footer .footer-info .footer-title h6, footer .footer-info .footer-title .h6 {
   }
 }
 .cart-container header .desktop-nav .logo {
-  margin-left: 30px;
   width: 220px;
 }
 .cart-container header .desktop-nav ul {
   margin: 0;
+  gap: 60px;
 }
 .cart-container header .desktop-nav ul li {
-  margin-right: 60px;
   text-decoration: none;
 }
 .cart-container header .desktop-nav ul li:hover {
@@ -11964,7 +11950,6 @@ footer .footer-info .footer-title h6, footer .footer-info .footer-title .h6 {
 }
 .cart-container header .desktop-nav ul .cart-icon {
   margin-left: 19px;
-  margin-right: 34px;
 }
 .cart-container header .mobile-nav {
   display: none;
@@ -12014,7 +11999,6 @@ footer .footer-info .footer-title h6, footer .footer-info .footer-title .h6 {
 .cart-container main .cart-page {
   max-width: 940px;
   margin: 0 auto;
-  justify-content: space-between;
 }
 .cart-container main .cart-page .cart-info {
   width: 65%;
@@ -12302,7 +12286,8 @@ footer .footer-info .footer-title h6, footer .footer-info .footer-title .h6 {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  margin: 30px 0;
+  max-width: 940px;
+  margin: 30px auto;
 }
 @media (max-width: 768px) {
   .delivery-container header .desktop-nav {
@@ -12310,14 +12295,13 @@ footer .footer-info .footer-title h6, footer .footer-info .footer-title .h6 {
   }
 }
 .delivery-container header .desktop-nav .logo {
-  margin-left: 30px;
   width: 220px;
 }
 .delivery-container header .desktop-nav ul {
   margin: 0;
+  gap: 60px;
 }
 .delivery-container header .desktop-nav ul li {
-  margin-right: 60px;
   text-decoration: none;
 }
 .delivery-container header .desktop-nav ul li:hover {
@@ -12325,7 +12309,6 @@ footer .footer-info .footer-title h6, footer .footer-info .footer-title .h6 {
 }
 .delivery-container header .desktop-nav ul .cart-icon {
   margin-left: 19px;
-  margin-right: 34px;
 }
 .delivery-container header .mobile-nav {
   display: none;
@@ -12372,7 +12355,6 @@ footer .footer-info .footer-title h6, footer .footer-info .footer-title .h6 {
   margin: 0 auto;
 }
 .delivery-container main .delivery-wrapper .delivery-data {
-  max-width: 460px;
   height: 100%;
   background-color: #3f5d45;
   color: #eaf0ed;
@@ -12765,7 +12747,8 @@ footer .footer-info .footer-title h6, footer .footer-info .footer-title .h6 {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  margin: 30px 0;
+  max-width: 940px;
+  margin: 30px auto;
 }
 @media (max-width: 768px) {
   .pay-container header .desktop-nav {
@@ -12773,14 +12756,13 @@ footer .footer-info .footer-title h6, footer .footer-info .footer-title .h6 {
   }
 }
 .pay-container header .desktop-nav .logo {
-  margin-left: 30px;
   width: 220px;
 }
 .pay-container header .desktop-nav ul {
   margin: 0;
+  gap: 60px;
 }
 .pay-container header .desktop-nav ul li {
-  margin-right: 60px;
   text-decoration: none;
 }
 .pay-container header .desktop-nav ul li:hover {
@@ -12788,7 +12770,6 @@ footer .footer-info .footer-title h6, footer .footer-info .footer-title .h6 {
 }
 .pay-container header .desktop-nav ul .cart-icon {
   margin-left: 19px;
-  margin-right: 34px;
 }
 .pay-container header .mobile-nav {
   display: none;
@@ -13151,7 +13132,8 @@ footer .footer-info .footer-title h6, footer .footer-info .footer-title .h6 {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  margin: 30px 0;
+  max-width: 940px;
+  margin: 30px auto;
 }
 @media (max-width: 768px) {
   .receipt-container header .desktop-nav {
@@ -13159,14 +13141,13 @@ footer .footer-info .footer-title h6, footer .footer-info .footer-title .h6 {
   }
 }
 .receipt-container header .desktop-nav .logo {
-  margin-left: 30px;
   width: 220px;
 }
 .receipt-container header .desktop-nav ul {
   margin: 0;
+  gap: 60px;
 }
 .receipt-container header .desktop-nav ul li {
-  margin-right: 60px;
   text-decoration: none;
 }
 .receipt-container header .desktop-nav ul li:hover {
@@ -13174,7 +13155,6 @@ footer .footer-info .footer-title h6, footer .footer-info .footer-title .h6 {
 }
 .receipt-container header .desktop-nav ul .cart-icon {
   margin-left: 19px;
-  margin-right: 34px;
 }
 .receipt-container header .mobile-nav {
   display: none;
@@ -13566,7 +13546,8 @@ footer .footer-info .footer-title h6, footer .footer-info .footer-title .h6 {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  margin: 30px 0;
+  max-width: 940px;
+  margin: 30px auto;
 }
 @media (max-width: 768px) {
   .complete-container header .desktop-nav {
@@ -13574,14 +13555,13 @@ footer .footer-info .footer-title h6, footer .footer-info .footer-title .h6 {
   }
 }
 .complete-container header .desktop-nav .logo {
-  margin-left: 30px;
   width: 220px;
 }
 .complete-container header .desktop-nav ul {
   margin: 0;
+  gap: 60px;
 }
 .complete-container header .desktop-nav ul li {
-  margin-right: 60px;
   text-decoration: none;
 }
 .complete-container header .desktop-nav ul li:hover {
@@ -13589,7 +13569,6 @@ footer .footer-info .footer-title h6, footer .footer-info .footer-title .h6 {
 }
 .complete-container header .desktop-nav ul .cart-icon {
   margin-left: 19px;
-  margin-right: 34px;
 }
 .complete-container header .mobile-nav {
   display: none;
