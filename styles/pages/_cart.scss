@@ -83,8 +83,9 @@
               }
             }
 
-            h4 {
-              font-size: 20px;
+            span {
+              font-size: $font-m;
+              font-weight: 500;
               margin: 0;
               @include Pad {
                 text-align: end;

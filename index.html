@@ -21,10 +21,10 @@
         <!--banner 背景圖片-->
         <div class="banner container-fluid mx-auto"></div>
         <!--banner 連結卡片-->
-        <div
+        <ul
           class="banner-container container-fluid d-flex justify-content-center"
         >
-          <div class="banner-card">
+          <li class="banner-card">
             <div
               class="select d-flex justify-content-center align-items-center"
             ></div>
@@ -33,8 +33,8 @@
               class="text-decoration-none fs-4 w-100 d-flex justify-content-center align-items-center bg-sweet-button-yellow text-sweet-green-dark fw-bold"
               >本日精選</a
             >
-          </div>
-          <div class="banner-card">
+          </li>
+          <li class="banner-card">
             <div
               class="recommend d-flex justify-content-center align-items-center"
             ></div>
@@ -43,8 +43,8 @@
               class="text-decoration-none fs-4 w-100 d-flex justify-content-center align-items-center"
               >人氣推薦</a
             >
-          </div>
-          <div class="banner-card">
+          </li>
+          <li class="banner-card">
             <div
               class="newproducts d-flex justify-content-center align-items-center"
             ></div>
@@ -53,8 +53,8 @@
               class="text-decoration-none fs-4 w-100 d-flex justify-content-center align-items-center"
               >新品上市</a
             >
-          </div>
-        </div>
+          </li>
+        </ul>
         <section class="introduction">
           <!--為什麼選擇了做甜點?-->
           <img
@@ -114,40 +114,39 @@
           </div>
         </section>
         <!--精選產品-->
-        <section
-          class="selected-products d-flex flex-wrap justify-content-around container text-sweet-green-dark"
-        >
-          <div class="sweet">
-            <img src="./sweetaste_img/p-2.png" alt="" />
-            <div class="selected-today">本日精選</div>
-            <i class="fa-regular fa-heart heart"></i>
-            <div class="sweet-info d-flex justify-content-around">
-              <h5 class="sweet-title fw-light">焦糖馬卡龍</h5>
-              <h5 class="">NT$ 450</h5>
-            </div>
-            <button class="w-100 border-0 fw-bold">加入購物車</button>
-          </div>
-          <div class="sweet">
-            <img src="./sweetaste_img/p-5.png" alt="" />
-            <div class="selected-today">本日精選</div>
-            <i class="fa-regular fa-heart heart"></i>
-            <!-- <i class="fa-solid fa-heart"></i> -->
-            <div class="sweet-info d-flex justify-content-around">
-              <h5 class="sweet-title fw-light">草莓小蛋糕</h5>
-              <h5>NT$ 450</h5>
-            </div>
-            <button class="w-100 border-0 fw-bold">加入購物車</button>
-          </div>
-          <div class="sweet">
-            <img src="./sweetaste_img/p-7.jpg" alt="" />
-            <div class="selected-today">本日精選</div>
-            <i class="fa-regular fa-heart heart"></i>
-            <div class="sweet-info d-flex justify-content-around">
-              <h5 class="sweet-title fw-light">焦糖馬卡龍</h5>
-              <h5>NT$ 450</h5>
-            </div>
-            <button class="w-100 border-0 fw-bold">加入購物車</button>
-          </div>
+        <section class="selected-products text-sweet-green-dark">
+          <ul class="d-flex flex-wrap justify-content-around p-0">
+            <li class="sweet">
+              <img src="./sweetaste_img/p-2.png" alt="" />
+              <div class="selected-today">本日精選</div>
+              <i class="fa-regular fa-heart heart"></i>
+              <div class="sweet-info d-flex justify-content-around">
+                <h5 class="sweet-title fw-light">焦糖馬卡龍</h5>
+                <p class="fw-bold">NT$ 450</p>
+              </div>
+              <button class="w-100 border-0 fw-bold">加入購物車</button>
+            </li>
+            <li class="sweet">
+              <img src="./sweetaste_img/p-5.png" alt="" />
+              <div class="selected-today">本日精選</div>
+              <i class="fa-regular fa-heart heart"></i>
+              <div class="sweet-info d-flex justify-content-around">
+                <h5 class="sweet-title fw-light">草莓小蛋糕</h5>
+                <p class="fw-bold">NT$ 450</p>
+              </div>
+              <button class="w-100 border-0 fw-bold">加入購物車</button>
+            </li>
+            <li class="sweet">
+              <img src="./sweetaste_img/p-7.jpg" alt="" />
+              <div class="selected-today">本日精選</div>
+              <i class="fa-regular fa-heart heart"></i>
+              <div class="sweet-info d-flex justify-content-around">
+                <h5 class="sweet-title fw-light">焦糖馬卡龍</h5>
+                <p class="fw-bold">NT$ 450</p>
+              </div>
+              <button class="w-100 border-0 fw-bold">加入購物車</button>
+            </li>
+          </ul>
         </section>
       </main>
     </div>

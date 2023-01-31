@@ -10975,10 +10975,10 @@ textarea.form-control-lg {
     margin-top: 30px;
   }
 }
-.home-container main .selected-products .sweet {
+.home-container main .selected-products ul .sweet {
   position: relative;
 }
-.home-container main .selected-products .sweet .selected-today {
+.home-container main .selected-products ul .sweet .selected-today {
   background-color: #3f5d45;
   color: #eaf0ed;
   -ms-writing-mode: tb-lr;
@@ -10993,53 +10993,58 @@ textarea.form-control-lg {
   top: 0;
   left: 20px;
 }
-.home-container main .selected-products .sweet .heart {
+.home-container main .selected-products ul .sweet .heart {
   position: absolute;
   right: 22px;
   top: 19px;
   font-size: 24px;
 }
-.home-container main .selected-products .sweet .heart:hover {
+.home-container main .selected-products ul .sweet .heart:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
-.home-container main .selected-products .sweet .fa-solid {
+.home-container main .selected-products ul .sweet .fa-solid {
   color: red;
 }
-.home-container main .selected-products .sweet .sweet-info {
+.home-container main .selected-products ul .sweet .sweet-info {
   color: #3f5d45;
   border-left: 1px solid #eaf0ed;
   border-right: 1px solid #eaf0ed;
 }
-.home-container main .selected-products .sweet .sweet-info h5, .home-container main .selected-products .sweet .sweet-info .h5 {
+.home-container main .selected-products ul .sweet .sweet-info h5, .home-container main .selected-products ul .sweet .sweet-info .h5 {
   margin: 0;
   padding: 14px 0;
 }
-.home-container main .selected-products .sweet .sweet-info .sweet-title {
+.home-container main .selected-products ul .sweet .sweet-info p {
+  font-size: 20px;
+  margin: auto 0;
+  text-align: center;
+}
+.home-container main .selected-products ul .sweet .sweet-info .sweet-title {
   border-right: 1px solid #eaf0ed;
   padding-right: 33px;
   padding-left: 16px;
 }
-.home-container main .selected-products .sweet button {
+.home-container main .selected-products ul .sweet button {
   font-size: 24px;
   padding: 16px 90px;
   color: #3f5d45;
   background-color: #eaf0ed;
   transition: 0.3s all ease;
 }
-.home-container main .selected-products .sweet button:hover {
+.home-container main .selected-products ul .sweet button:hover {
   color: #eaf0ed;
   background-color: #3f5d45;
 }
-.home-container main .selected-products .sweet .selected-today {
+.home-container main .selected-products ul .sweet .selected-today {
   top: 0;
 }
-.home-container main .selected-products .sweet .heart {
+.home-container main .selected-products ul .sweet .heart {
   top: 19px;
 }
 @media (max-width: 768px) {
-  .home-container main .selected-products div:nth-child(2),
-.home-container main .selected-products div:nth-child(3) {
+  .home-container main .selected-products ul li:nth-child(2),
+.home-container main .selected-products ul li:nth-child(3) {
     display: none;
   }
 }
@@ -11296,9 +11301,6 @@ footer .footer-info .footer-title h6, footer .footer-info .footer-title .h6 {
 }
 .sweet-container main .product-content .products {
   max-width: 640px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
   margin: 0 auto;
   gap: 20px;
 }
@@ -11346,6 +11348,11 @@ footer .footer-info .footer-title h6, footer .footer-info .footer-title .h6 {
 .sweet-container main .product-content .products .sweet .sweet-info h5, .sweet-container main .product-content .products .sweet .sweet-info .h5 {
   margin: 0;
   padding: 14px 0;
+}
+.sweet-container main .product-content .products .sweet .sweet-info p {
+  font-size: 20px;
+  margin: auto 0;
+  text-align: center;
 }
 .sweet-container main .product-content .products .sweet .sweet-info .sweet-title {
   border-right: 1px solid #eaf0ed;
@@ -12076,12 +12083,13 @@ footer .footer-info .footer-title h6, footer .footer-info .footer-title .h6 {
 .cart-container main .cart-page .cart-info ul li .item .item-info .items-qty button span {
   text-align: center;
 }
-.cart-container main .cart-page .cart-info ul li h4, .cart-container main .cart-page .cart-info ul li .h4 {
+.cart-container main .cart-page .cart-info ul li span {
   font-size: 20px;
+  font-weight: 500;
   margin: 0;
 }
 @media (max-width: 768px) {
-  .cart-container main .cart-page .cart-info ul li h4, .cart-container main .cart-page .cart-info ul li .h4 {
+  .cart-container main .cart-page .cart-info ul li span {
     text-align: end;
     width: 100%;
     border-top: 1px solid #eaf0ed;

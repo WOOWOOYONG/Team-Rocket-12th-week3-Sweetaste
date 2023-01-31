@@ -62,9 +62,6 @@
       }
       .products {
         max-width: 640px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-end;
         margin: 0 auto;
         gap: 20px;
         @include Pad {

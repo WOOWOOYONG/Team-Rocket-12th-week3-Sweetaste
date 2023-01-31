@@ -45,6 +45,11 @@
       margin: 0;
       padding: 14px 0;
     }
+    p {
+      font-size: $font-m;
+      margin: auto 0;
+      text-align: center;
+    }
     .sweet-title {
       border-right: 1px solid $sweet-green-light;
       padding-right: 33px;

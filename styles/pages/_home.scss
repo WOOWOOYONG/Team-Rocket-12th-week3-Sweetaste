@@ -232,20 +232,22 @@
       @include Pad {
         margin-top: 30px;
       }
-      .sweet {
-        position: relative;
-        @include sweetProductCard;
-        .selected-today {
-          top: 0;
+      ul {
+        .sweet {
+          position: relative;
+          @include sweetProductCard;
+          .selected-today {
+            top: 0;
+          }
+          .heart {
+            top: 19px;
+          }
         }
-        .heart {
-          top: 19px;
-        }
-      }
-      @include Pad {
-        div:nth-child(2),
-        div:nth-child(3) {
-          display: none;
+        li:nth-child(2),
+        li:nth-child(3) {
+          @include Pad {
+            display: none;
+          }
         }
       }
     }
