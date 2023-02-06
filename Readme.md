@@ -8,3 +8,4 @@
 
 1. 用 jQuery 重複插入 header & footer
 2. bootstrap 格線系統 & 客製化
+3. 練習使用 first-child,nth-child( )減少命名 class
